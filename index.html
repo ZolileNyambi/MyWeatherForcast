@@ -13,22 +13,27 @@
 <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city" required>
-            <input type="submit" value="Search">
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city" required class="search-form-input">
+            <input type="submit" value="Search" class="search-form-button">
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div >
-        <h1>Johannesburg</h1>
-        <p>
+        <h1 class="weather-app-city">Johannesburg</h1>
+        <p class="weather-app-details">
             Tuesday, 14:30, cloudy <br>
-            Humidity: 66%, Wind: 3,5 km/h
+            Humidity: <strong>66%</strong>, Wind: <strong>3,5 km/h</strong>
         </p>
     </div>
-    <div>
-        <i class="fa-solid fa-cloud"></i>12&deg;
+    <div class="weather-app-temp-container">
+        <div class="weather-app-icon">&#x2600;</div>
+        <div class="weather-app-temp-value">12</div>
+        <div class="weather-app-unit">&deg;C</div>
+        
     </div>
+</div>
     </main>
     
     <footer>Coded by <a href="https://github.com/ZolileNyambi " target="_blank">Zolile Nyambi</a> open-sourced on
