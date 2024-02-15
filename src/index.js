@@ -10,7 +10,7 @@ function refreshWeather(response){
     tempDescription.innerHTML = response.data.condition.description;
 
     let tempHumidity = document.querySelector("#humidity");
-    tempHumidity.innerHTML = `${response.data.temperature.humidity} %`;
+    tempHumidity.innerHTML = `${response.data.temperature.humidity}%`;
 
     let tempWind = document.querySelector("#wind");
     tempWind.innerHTML = `${response.data.wind.speed} km/h`;
@@ -36,7 +36,7 @@ function formatDate(date) {
         minutes = `0${minutes}`;
     }
 
-    return `${day} ${hours}:${minutes}`
+    return `${day}, ${hours}:${minutes}, `
 
 
 
